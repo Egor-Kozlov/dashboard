@@ -1,0 +1,15 @@
+// config
+// ==================================================
+@import './source/scss/config/reset';
+@import './source/scss/config/variables';
+@import './source/scss/config/mixins';
+@import './source/scss/config/global-style';
+
+// components
+// ==================================================
+
+@import './source/scss/components/header';
+
+// adaptive
+// ==================================================
+@import './source/scss/config/media';
