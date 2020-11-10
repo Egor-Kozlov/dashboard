@@ -368,6 +368,114 @@ textarea {
   src: url(../fonts/deftone_stylus.ttf);
 }
 
+.nav {
+  width: 75px;
+  height: 100vh;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fd4e75), to(#fc7858));
+  background: linear-gradient(top, #fd4e75 0%, #fc7858 100%);
+  -webkit-background-clip: padding-box;
+}
+
+.nav-body {
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-logo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 75px;
+  height: 75px;
+  padding: 18px;
+  padding-top: 22px;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+
+.nav-logo__letter {
+  font-family: Deftone Stylus;
+  text-transform: uppercase;
+  font-size: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fd4e75), to(#fc7858));
+  background: linear-gradient(top, #fd4e75 0%, #fc7858 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav__list {
+  padding-top: 15px;
+}
+
+.nav__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 75px;
+  height: 75px;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.nav__item_home {
+  background: url(../img/backgronds/navigation/home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav__item_statistics {
+  background: url(../img/backgronds/navigation/statistics.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav__item_users {
+  background: url(../img/backgronds/navigation/user.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav__item_settings {
+  background: url(../img/backgronds/navigation/settings.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav__item_quires {
+  background: url(../img/backgronds/navigation/quires.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav__power-button {
+  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 75px;
+  height: 75px;
+  background: url(../img/backgronds/navigation/power-button.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 h1 {
   font-family: Deftone Stylus;
 }
