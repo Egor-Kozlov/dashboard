@@ -557,10 +557,53 @@ textarea {
   background: url(../img/backgronds/header/settings.png) no-repeat center;
 }
 
-.input__search {
+.input-search {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-search__form {
+  margin: 0 auto;
+  width: auto;
+  position: relative;
+}
+
+.input-search__input {
+  width: 350px;
+  height: 33px;
+  margin-top: 19px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 1px solid #f1f1f1;
+  background: #f6f6f6;
+  outline: none;
+  position: relative;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.input-search__input:focus {
+  width: 700px;
+}
+
+.input-search__button {
+  width: 42px;
+  height: 42px;
+  background: url(../img/backgronds/header/zoom.png) no-repeat center;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+
+.input-search__button::before {
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
 }
 
 .header__item_upload {
