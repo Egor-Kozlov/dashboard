@@ -1,0 +1,5 @@
+@mixin hover-botton {
+    transition: all 200ms ease;
+    transform: scale(1.06);
+    box-shadow: inset 0px 0px 5px 1px rgba(255, 255, 255, 0.7);
+}

@@ -1,3 +1,66 @@
-h1 {
-    font-family: Deftone Stylus;
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    background: #ffffff;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+    box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    border-right: 1px solid #f1f1f1;
+}
+
+.header__item:hover {
+    @include hover-botton;
+    box-shadow: inset 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+// left-side header
+// ================================================================================== 
+.header__item_menu {
+    background: url(../img/backgronds/header/menu.png) no-repeat center;
+}
+
+.header__item_folder {
+    background: url(../img/backgronds/header/folder.png) no-repeat center;
+}
+
+.header__item_settings {
+    background: url(../img/backgronds/header/settings.png) no-repeat center;
+}
+
+// search
+// ================================================================================== 
+.input__search {
+    flex-grow: 1;
+}
+
+// right-side header
+// ================================================================================== 
+.header__item_upload {
+    background: url(../img/backgronds/header/upload.png) no-repeat center;
+    border-left: 1px solid #f1f1f1;
+}
+
+.header__item_mail {
+    background: url(../img/backgronds/header/mail.png) no-repeat center;
+}
+
+.header__item_planet-earth {
+    background: url(../img/backgronds/header/planet-earth.png) no-repeat center;
+}
+
+// profile
+// ================================================================================== 
+.profile {
+    width: 250px;
+    background: coral;
 }
