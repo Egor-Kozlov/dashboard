@@ -3,3 +3,9 @@
     transform: scale(1.06);
     box-shadow: inset 0px 0px 5px 1px rgba(255, 255, 255, 0.7);
 }
+
+@mixin gradient-text {
+    background: linear-gradient(to right,#fd4e75, #fc7858 ); /* Градиент для текста */
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent; /* Прозрачный текст */
+}

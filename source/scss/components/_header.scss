@@ -103,6 +103,38 @@
 // profile
 // ================================================================================== 
 .profile {
+    display: flex;
+    justify-content: space-between;
     width: 250px;
-    background: coral;
+}
+
+.profile__photo-jenner {
+    width: 75px;
+}
+
+.profile__data {
+    margin: auto;
+}
+
+.profile__name {
+    margin-bottom: 6px;
+    @include gradient-text;
+    font-family: Lato;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.profile__position {
+    color: #bfbfbf;
+    font-family: Lato;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.ellipse {
+    margin: auto;
+    width: 6px;
+    height: 20px;
+    background: url(../img/backgronds/header/ellipse.png) no-repeat center;
 }
