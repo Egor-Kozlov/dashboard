@@ -421,8 +421,8 @@ textarea {
   font-family: Deftone Stylus;
   text-transform: uppercase;
   font-size: 3.7em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fd4e75), to(#fc7858));
-  background: linear-gradient(top, #fd4e75 0%, #fc7858 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fc7858), to(#fd4e75));
+  background: linear-gradient(top, #fc7858 0%, #fd4e75 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -582,8 +582,10 @@ textarea {
   background: #f6f6f6;
   outline: none;
   position: relative;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 .input-search__input:focus {
@@ -601,9 +603,9 @@ textarea {
 }
 
 .input-search__button::before {
-  content: "\f002";
-  font-family: FontAwesome;
-  color: #324b4e;
+  content: "";
+  font-family: Lato;
+  color: #c8c8c8;
 }
 
 .header__item_upload {

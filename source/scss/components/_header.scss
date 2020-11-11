@@ -60,7 +60,9 @@
     background: #f6f6f6;;
     outline: none;
     position: relative;
-    transition: .3s linear;
+    transition: 0.3s linear;
+    font-size: 1.2em;
+    font-weight: 400;
 }
 
 .input-search__input:focus {
@@ -78,9 +80,9 @@
 }
 
 .input-search__button::before {
-    content: "\f002";
-    font-family: FontAwesome;
-    color: #324b4e;
+    content: "";
+    font-family: Lato;
+    color: #c8c8c8;
 }
 
 // right-side header
