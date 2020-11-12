@@ -1,0 +1,85 @@
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+
+.cards__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards__container_second {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.cards {
+    width: 1100px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.cards__card {
+    margin-bottom: 2%; 
+    margin-left: 2%;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.13);
+    @include title-card;
+}
+
+.cards__card_monthly-revenue-progress {
+    width: 703px;
+    height: 265px;
+}
+
+.cards__card_revenue-per-hour {
+    width: 263px;
+    height: 265px;
+}
+
+
+
+
+.cards__card_customers-feed {
+    width: 466px;
+    height: 507px;
+}
+
+.cards__card_todays-task {
+    width: 500px;
+    height: 244px;
+}
+
+.cards__card_progress {
+    width: 240px;
+    height: 244px;
+}
+
+.cards__card_shipments {
+    width: 240px;
+    height: 244px;
+    background: url(../img/backgronds/cards/map.png) no-repeat center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aside {
+    width: 290px;
+    background: darkolivegreen;
+}

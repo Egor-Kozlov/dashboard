@@ -9,3 +9,12 @@
     -webkit-background-clip: text; /* Обрезаем фон по тексту */
     -webkit-text-fill-color: transparent; /* Прозрачный текст */
 }
+
+@mixin title-card {
+    padding-top: 30px;
+    color: #777777;
+    font-family: Lato;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+}
