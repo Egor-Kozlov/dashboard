@@ -26,6 +26,7 @@
     margin-bottom: 2%; 
     margin-left: 2%;
     box-sizing: border-box;
+    padding: 30px;
     background: #ffffff;
     box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.13);
     @include title-card;
@@ -49,10 +50,48 @@
     height: 507px;
 }
 
+// card_todays-task
 .cards__card_todays-task {
     width: 500px;
     height: 244px;
+    text-align: left;
 }
+
+.checkbox-form {
+    width: 440px;
+    height: 155px;
+    margin-top: 20px;
+    border-bottom: 1px #ededed solid;
+}
+
+.checkbox-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    border-top: 1px #ededed solid;
+    @include card-text;
+}
+
+.checkbox {
+}
+
+.chebox__text {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 15px;
+}
+
+.time-container {
+    width: 85px;
+    text-align: right;
+    background: url(../img/backgronds/cards/wall-clock.png) #ffffff no-repeat left;
+}
+
+// end card_todays-task
 
 .cards__card_progress {
     width: 240px;
