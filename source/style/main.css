@@ -782,16 +782,59 @@ textarea {
   border-top: 1px #ededed solid;
   color: #bfbfbf;
   font-family: Lato;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 1.2em;
+  font-weight: 700;
   line-height: 15px;
+  font-size: 10px;
 }
 
-.chebox__text {
-  font-size: 12px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
+.checkbox-container:nth-child(even) {
+  background: #fcfcfc;
+}
+
+.checkbox {
+  visibility: hidden;
+}
+
+.checkbox__label {
+  width: 16px;
+  /* Ширина рисунка */
+  height: 16px;
+  /* Высота рисунка */
+  display: block;
+  /* Блочный элемент */
+  position: relative;
+  /* Относительное позиционирование */
+}
+
+.checkbox + .checkbox__span {
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/backgronds/cards/checkbox-disable.png) no-repeat;
+  /* Фоновый рисунок */
+  cursor: pointer;
+  /* Курсор в виде руки */
+}
+
+.checkbox:checked + .checkbox__span {
+  background: url(../img/backgronds/cards/checkbox-active.png) no-repeat;
+  /* Фоновый рисунок */
+}
+
+.checkbox__text {
+  background: -webkit-gradient(linear, left top, right top, from(#fd4e75), to(#fc7858));
+  background: linear-gradient(to right, #fd4e75, #fc7858);
+  /* Градиент для текста */
+  -webkit-background-clip: text;
+  /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent;
+  /* Прозрачный текст */
+  font-size: 1.2em;
+  font-weight: 700;
   line-height: 15px;
 }
 
