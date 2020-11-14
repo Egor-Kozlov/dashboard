@@ -68,7 +68,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 38px;
+    height: 40px;
     border-top: 1px #ededed solid;
     @include card-text;
     font-size: 10px;
@@ -123,31 +123,20 @@
 // ================================================================================== 
 
 .cards__card_progress {
-    width: 240px;
+    width: 245px;
     height: 244px;
+    margin-left: 0;
 }
 
 // card_shipments
 // ================================================================================== 
 .cards__card_shipments {
-    width: 240px;
+    width: 245px;
     height: 244px;
     background: url(../img/backgronds/cards/map.png) #ffffff no-repeat center;
 }
 // end card_shipments
 // ================================================================================== 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .aside {
