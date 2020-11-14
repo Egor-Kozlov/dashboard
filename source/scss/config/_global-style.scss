@@ -20,3 +20,29 @@
     margin-left: 75px;
 }
 
+// scroll style
+// ================================================================================== 
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* handle */
+::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(top, #fc7858 0%, #fd4e75 100%); 
+}
+// end scroll
+// ================================================================================== 

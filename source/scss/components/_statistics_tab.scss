@@ -1,5 +1,36 @@
-.statistics_tab {
+.statistics-tab {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 100px;
     background: rgb(255, 255, 255);
+}
+
+.statistics-tab__item {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.statistics-tab__title {
+    @include title-card;
+    font-size: 1.3em;
+    margin-bottom: 9px;
+}
+
+.statistics-tab__amount {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    @include gradient-text;
+}
+
+.statistics-tab__value {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 9px;
+    color: #bfbfbf;
+    font-family: Lato;
+    font-size: 1.2em;
+    font-weight: 700;
 }

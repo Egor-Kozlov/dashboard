@@ -391,6 +391,28 @@ textarea {
   margin-left: 75px;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 0px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fc7858), to(#fd4e75));
+  background: linear-gradient(top, #fc7858 0%, #fd4e75 100%);
+}
+
 .nav {
   position: fixed;
   width: 75px;
@@ -678,10 +700,58 @@ textarea {
   background: url(../img/backgronds/header/ellipse.png) no-repeat center;
 }
 
-.statistics_tab {
+.statistics-tab {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   height: 100px;
   background: white;
+}
+
+.statistics-tab__item {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.statistics-tab__title {
+  color: #777777;
+  font-family: Lato;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 9px;
+}
+
+.statistics-tab__amount {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#fd4e75), to(#fc7858));
+  background: linear-gradient(to right, #fd4e75, #fc7858);
+  /* Градиент для текста */
+  -webkit-background-clip: text;
+  /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent;
+  /* Прозрачный текст */
+}
+
+.statistics-tab__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 9px;
+  color: #bfbfbf;
+  font-family: Lato;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
 .content {
@@ -763,7 +833,8 @@ textarea {
   width: 440px;
   height: 155px;
   margin-top: 20px;
-  border-bottom: 1px #ededed solid;
+  padding-right: 4px;
+  overflow-y: scroll;
 }
 
 .checkbox-container {
@@ -790,6 +861,10 @@ textarea {
 
 .checkbox-container:nth-child(even) {
   background: #fcfcfc;
+}
+
+.checkbox-container:last-child {
+  border-bottom: 1px #ededed solid;
 }
 
 .checkbox {

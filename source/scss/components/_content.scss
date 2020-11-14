@@ -42,15 +42,13 @@
     height: 265px;
 }
 
-
-
-
 .cards__card_customers-feed {
     width: 466px;
     height: 507px;
 }
 
 // card_todays-task
+// ================================================================================== 
 .cards__card_todays-task {
     width: 500px;
     height: 244px;
@@ -61,7 +59,8 @@
     width: 440px;
     height: 155px;
     margin-top: 20px;
-    border-bottom: 1px #ededed solid;
+    padding-right: 4px;
+    overflow-y: scroll;
 }
 
 .checkbox-container {
@@ -77,6 +76,10 @@
 
 .checkbox-container:nth-child(even) {
     background: #fcfcfc;
+}
+
+.checkbox-container:last-child {
+    border-bottom: 1px #ededed solid;
 }
 
 .checkbox {
@@ -117,18 +120,22 @@
 }
 
 // end card_todays-task
+// ================================================================================== 
 
 .cards__card_progress {
     width: 240px;
     height: 244px;
 }
 
+// card_shipments
+// ================================================================================== 
 .cards__card_shipments {
     width: 240px;
     height: 244px;
     background: url(../img/backgronds/cards/map.png) #ffffff no-repeat center;
-    
 }
+// end card_shipments
+// ================================================================================== 
 
 
 
