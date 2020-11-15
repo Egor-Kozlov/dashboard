@@ -3,6 +3,10 @@
     flex-grow: 1;
 }
 
+.card__title {
+    @include title-card;
+}
+
 .cards__container {
     display: flex;
     justify-content: space-between;
@@ -29,13 +33,33 @@
     padding: 30px;
     background: #ffffff;
     box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.13);
-    @include title-card;
 }
+
+// card_monthly-revenue-progress
+// ================================================================================== 
 
 .cards__card_monthly-revenue-progress {
     width: 703px;
     height: 265px;
 }
+
+.card-monthly-revenue-progress__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-monthly-revenue-progress__bottons {
+    display: flex;
+    justify-content: space-between;
+    width: 165px;
+}
+
+.card-monthly-revenue-progress__botton {
+    margin-left: 5px;
+}
+
+// end card_monthly-revenue-progress
+// ================================================================================== 
 
 .cards__card_revenue-per-hour {
     width: 263px;
@@ -71,7 +95,7 @@
     height: 40px;
     border-top: 1px #ededed solid;
     @include card-text;
-    font-size: 10px;
+    font-size: 1em;
 }
 
 .checkbox-container:nth-child(even) {
@@ -113,9 +137,13 @@
 }
 
 .time-container {
-    width: 85px;
+    width: 60px;
     text-align: right;
     background: url(../img/backgronds/cards/wall-clock.png) #ffffff no-repeat left;
+}
+
+.time-container:nth-child(even) {
+    background: url(../img/backgronds/cards/wall-clock.png) #fcfcfc no-repeat left;
 }
 // end card_todays-task
 // ================================================================================== 
@@ -141,7 +169,6 @@
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
-    font-size: 10px;
 }
 
 .card__dialog-container {
@@ -150,6 +177,12 @@
     margin-top: 20px;
     @include card-text;
     font-size: 1.2em;
+}
+
+.card__profile-status {
+    padding-top: 4px;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 .card__profile-picture-container {

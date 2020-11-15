@@ -730,7 +730,7 @@ textarea {
 
 .statistics-tab__amount {
   font-family: Lato;
-  font-size: 20px;
+  font-size: 2em;
   font-weight: 700;
   background: -webkit-gradient(linear, left top, right top, from(#fd4e75), to(#fc7858));
   background: linear-gradient(to right, #fd4e75, #fc7858);
@@ -777,6 +777,14 @@ textarea {
           flex-grow: 1;
 }
 
+.card__title {
+  color: #777777;
+  font-family: Lato;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+}
+
 .cards__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -815,16 +823,34 @@ textarea {
   background: #ffffff;
   -webkit-box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.13);
           box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.13);
-  color: #777777;
-  font-family: Lato;
-  font-size: 1.4em;
-  font-weight: 700;
-  text-align: center;
 }
 
 .cards__card_monthly-revenue-progress {
   width: 703px;
   height: 265px;
+}
+
+.card-monthly-revenue-progress__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-monthly-revenue-progress__bottons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 165px;
+}
+
+.card-monthly-revenue-progress__botton {
+  margin-left: 5px;
 }
 
 .cards__card_revenue-per-hour {
@@ -870,7 +896,7 @@ textarea {
   font-size: 1.2em;
   font-weight: 700;
   line-height: 15px;
-  font-size: 10px;
+  font-size: 1em;
 }
 
 .checkbox-container:nth-child(even) {
@@ -928,9 +954,13 @@ textarea {
 }
 
 .time-container {
-  width: 85px;
+  width: 60px;
   text-align: right;
   background: url(../img/backgronds/cards/wall-clock.png) #ffffff no-repeat left;
+}
+
+.time-container:nth-child(even) {
+  background: url(../img/backgronds/cards/wall-clock.png) #fcfcfc no-repeat left;
 }
 
 .cards__card_progress {
@@ -953,7 +983,6 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow-y: scroll;
-  font-size: 10px;
 }
 
 .card__dialog-container {
@@ -969,6 +998,12 @@ textarea {
   font-weight: 700;
   line-height: 15px;
   font-size: 1.2em;
+}
+
+.card__profile-status {
+  padding-top: 4px;
+  font-size: 0.8em;
+  text-align: center;
 }
 
 .card__profile-picture-container {
