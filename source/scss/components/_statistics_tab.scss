@@ -28,7 +28,10 @@
 .statistics-tab__value {
     display: flex;
     justify-content: space-around;
-    margin-top: 9px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 6px;
+    width: 80px;
     color: #bfbfbf;
     font-family: Lato;
     font-size: 1.2em;
@@ -41,4 +44,24 @@
     font-size: 1.2em;
     font-weight: 700;
     @include gradient-text;
+}
+
+.statistics-tab__count_up:before {
+    top: 10px;
+    left: -2px;
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: 0 2.5px 5px 2.5px;
+    border-color: transparent transparent #A889E9 transparent;
+}
+
+.statistics-tab__count_down:before {
+    top: 10px;
+    left: 38px;
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: 5px 2.5px 0 2.5px;
+    border-color: #FD5670 transparent transparent transparent;
 }

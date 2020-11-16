@@ -747,7 +747,10 @@ textarea {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 9px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 6px;
+  width: 80px;
   color: #bfbfbf;
   font-family: Lato;
   font-size: 1.2em;
@@ -766,6 +769,26 @@ textarea {
   /* Обрезаем фон по тексту */
   -webkit-text-fill-color: transparent;
   /* Прозрачный текст */
+}
+
+.statistics-tab__count_up:before {
+  top: 10px;
+  left: -2px;
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: 0 2.5px 5px 2.5px;
+  border-color: transparent transparent #A889E9 transparent;
+}
+
+.statistics-tab__count_down:before {
+  top: 10px;
+  left: 38px;
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: 5px 2.5px 0 2.5px;
+  border-color: #FD5670 transparent transparent transparent;
 }
 
 .content {
@@ -828,6 +851,7 @@ textarea {
 .cards__card_monthly-revenue-progress {
   width: 703px;
   height: 265px;
+  background: url(../img/backgronds/cards/graph.png) #ffffff no-repeat center;
 }
 
 .card-monthly-revenue-progress__container {
@@ -853,14 +877,123 @@ textarea {
   margin-left: 5px;
 }
 
+.card-monthly-revenue-progress__vertically-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  height: 150px;
+}
+
+.card-monthly-revenue-progress-vertically__item {
+  margin-bottom: 29px;
+  color: #bfbfbf;
+  font-family: Lato;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.card-monthly-revenue-progress__graph {
+  width: 581px;
+  height: 116px;
+}
+
+.card-monthly-revenue-progress__horizontally-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 581px;
+  margin-left: 60px;
+  color: #bfbfbf;
+  font-family: Lato;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 15px;
+}
+
 .cards__card_revenue-per-hour {
   width: 263px;
   height: 265px;
+  background: url(../img/backgronds/cards/radius.png) #ffffff no-repeat center;
+}
+
+.cards__card_revenue-per-hour > .statistics-tab__value {
+  margin-top: 175px;
 }
 
 .cards__card_customers-feed {
   width: 466px;
   height: 507px;
+}
+
+.cards__card_customers-feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.card__dialog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+  color: #bfbfbf;
+  font-family: Lato;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 15px;
+  font-size: 1.2em;
+}
+
+.card__profile-status {
+  padding-top: 4px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.card__profile-picture-container {
+  margin-left: 5px;
+}
+
+.card__message-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 25px;
+  margin-right: 30px;
+}
+
+.card__message {
+  width: 280px;
+  padding: 22px;
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
+  border: 1px solid #f1f1f1;
+  text-align: left;
+}
+
+.card__message:not(:first-child) {
+  width: 260px;
+}
+
+.card__message_nickname {
+  color: #777777;
+  font-family: "Lato - Black";
+  font-weight: 900;
 }
 
 .cards__card_todays-task {
@@ -970,76 +1103,30 @@ textarea {
   background: url(../img/backgronds/cards/progress.png) #ffffff no-repeat center;
 }
 
+.cards__card_progress > .statistics-tab__item {
+  margin-top: 140px;
+}
+
+.statistics-tab__amount_purple {
+  background: linear-gradient(-30deg, #8841af 0%, #708ae6 100%);
+  -webkit-background-clip: text;
+  /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent;
+  /* Прозрачный текст */
+}
+
 .cards__card_shipments {
   width: 245px;
   height: 244px;
   background: url(../img/backgronds/cards/map.png) #ffffff no-repeat center;
 }
 
-.cards__card_customers-feed {
+.cards__card_shipments > .statistics-tab__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  overflow-y: scroll;
-}
-
-.card__dialog-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 20px;
-  color: #bfbfbf;
-  font-family: Lato;
-  font-size: 1.2em;
-  font-weight: 700;
-  line-height: 15px;
-  font-size: 1.2em;
-}
-
-.card__profile-status {
-  padding-top: 4px;
-  font-size: 0.8em;
-  text-align: center;
-}
-
-.card__profile-picture-container {
-  margin-left: 5px;
-}
-
-.card__message-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-left: 25px;
-  margin-right: 30px;
-}
-
-.card__message {
-  width: 280px;
-  padding: 22px;
-  margin-bottom: 20px;
-  background-color: #f6f6f6;
-  border: 1px solid #f1f1f1;
-  text-align: left;
-}
-
-.card__message:not(:first-child) {
-  width: 260px;
-}
-
-.card__message_nickname {
-  color: #777777;
-  font-family: "Lato - Black";
-  font-weight: 900;
+  margin-top: 155px;
+  width: 230px;
 }
 
 .aside {

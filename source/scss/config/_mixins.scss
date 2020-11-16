@@ -10,6 +10,12 @@
     -webkit-text-fill-color: transparent; /* Прозрачный текст */
 }
 
+@mixin purple-gradient-text {
+    background: linear-gradient(-30deg, #8841af 0%, #708ae6 100%);
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent; /* Прозрачный текст */
+}
+
 @mixin title-card {
     color: #777777;
     font-family: Lato;
@@ -25,3 +31,4 @@
     font-weight: 700;
     line-height: 15px;
 }
+

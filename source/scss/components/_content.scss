@@ -41,6 +41,7 @@
 .cards__card_monthly-revenue-progress {
     width: 703px;
     height: 265px;
+    background: url(../img/backgronds/cards/graph.png) #ffffff no-repeat center;
 }
 
 .card-monthly-revenue-progress__container {
@@ -58,18 +59,108 @@
     margin-left: 5px;
 }
 
+.card-monthly-revenue-progress__vertically-container {
+    display: flex;
+    margin-top: 20px;
+    height: 150px;
+}
+
+.card-monthly-revenue-progress-vertically__item {
+    margin-bottom: 29px;
+    @include card-text;
+}
+
+.card-monthly-revenue-progress__graph {
+    width: 581px;
+    height: 116px;
+   
+}
+
+.card-monthly-revenue-progress__horizontally-list {
+    display: flex;
+    justify-content: space-between;
+    width: 581px;
+    margin-left: 60px;
+    @include card-text;
+}
+
 // end card_monthly-revenue-progress
 // ================================================================================== 
-
+// card_revenue-per-hour
+// ==================================================================================
 .cards__card_revenue-per-hour {
     width: 263px;
     height: 265px;
+    background: url(../img/backgronds/cards/radius.png) #ffffff no-repeat center;
 }
 
+.cards__card_revenue-per-hour > .statistics-tab__value {
+    margin-top: 175px;
+}
+
+// end card_revenue-per-hour
+// ==================================================================================
+
+// customers-feed
+// ================================================================================== 
 .cards__card_customers-feed {
     width: 466px;
     height: 507px;
 }
+.cards__card_customers-feed {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.card__dialog-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    @include card-text;
+    font-size: 1.2em;
+}
+
+.card__profile-status {
+    padding-top: 4px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.card__profile-picture-container {
+    margin-left: 5px;
+}
+
+.card__message-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: 25px;
+    margin-right: 30px;
+}
+
+.card__message {
+    width: 280px;
+    padding: 22px;
+    margin-bottom: 20px;
+    background-color: #f6f6f6;
+    border: 1px solid #f1f1f1;
+    text-align: left;
+}
+
+.card__message:not(:first-child) {
+    width: 260px;
+}
+
+.card__message_nickname {
+    color: #777777;
+    font-family: "Lato - Black";
+    font-weight: 900;
+}
+
+// end customers-feed
+// ================================================================================== 
+
 
 // card_todays-task
 // ================================================================================== 
@@ -87,7 +178,7 @@
     overflow-y: scroll;
 }
 
-.checkbox-container {
+.checkbox-container { 
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -147,12 +238,24 @@
 }
 // end card_todays-task
 // ================================================================================== 
+// card_progress
+// ================================================================================== 
 .cards__card_progress {
     width: 245px;
     height: 244px;
     margin-left: 0;
     background: url(../img/backgronds/cards/progress.png) #ffffff no-repeat center;
 }
+
+.cards__card_progress > .statistics-tab__item {
+    margin-top: 140px;
+}
+
+.statistics-tab__amount_purple {
+    @include purple-gradient-text;
+}
+// end card_progress
+// ==================================================================================
 // card_shipments
 // ================================================================================== 
 .cards__card_shipments {
@@ -160,68 +263,14 @@
     height: 244px;
     background: url(../img/backgronds/cards/map.png) #ffffff no-repeat center;
 }
+
+.cards__card_shipments > .statistics-tab__item {
+    display: flex;
+    margin-top: 155px;
+    width: 230px;
+}
 // end card_shipments
 // ================================================================================== 
-
-// customers-feed
-// ================================================================================== 
-.cards__card_customers-feed {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-y: scroll;
-}
-
-.card__dialog-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    @include card-text;
-    font-size: 1.2em;
-}
-
-.card__profile-status {
-    padding-top: 4px;
-    font-size: 0.8em;
-    text-align: center;
-}
-
-.card__profile-picture-container {
-    margin-left: 5px;
-}
-
-.card__message-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin-left: 25px;
-    margin-right: 30px;
-}
-
-.card__message {
-    width: 280px;
-    padding: 22px;
-    margin-bottom: 20px;
-    background-color: #f6f6f6;
-    border: 1px solid #f1f1f1;
-    text-align: left;
-
-    
-   
-}
-
-.card__message:not(:first-child) {
-    width: 260px;
-}
-
-.card__message_nickname {
-    color: #777777;
-    font-family: "Lato - Black";
-    font-weight: 900;
-}
-
-// end customers-feed
-// ================================================================================== 
-
 
 
 
